@@ -1,0 +1,20 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Environment & OS
+.env
+.env.local
+.DS_Store
+
+# Trained model (258MB+; GitHub max single file 100MB — train with car_price_model_advanced.py)
+model_advanced.joblib
+
+# Node (monorepo root; frontend has its own .gitignore too)
+node_modules/
+dist/
+dist-ssr/

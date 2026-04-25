@@ -1,0 +1,14 @@
+{
+  "random_state": 42,
+  "total_rows": 10000,
+  "train_rows": 7000,
+  "validation_rows": 1500,
+  "test_rows": 1500,
+  "train_pct": 70.0,
+  "validation_pct": 15.0,
+  "test_pct": 15.0,
+  "r2_train": 0.9856432041177607,
+  "r2_validation": 0.9004943899430752,
+  "r2_test": 0.8895287462232847,
+  "note": "Pipeline fit on training split only; R\u00b2 on val/test reflects generalization. Saved model_advanced.joblib is fit on full data."
+}
