@@ -8,6 +8,7 @@ from flask_cors import CORS
 import pandas as pd
 import joblib
 import json
+import os
 from pathlib import Path
 from datetime import datetime
 
@@ -679,12 +680,13 @@ def predict():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 5001))
     print("🚀 Starting Car Price Prediction API Server...")
     load_model()
     load_dataset()
     load_market_reference()
     load_metrics()
-    print("📡 Server running on http://localhost:5001")
+    print(f"📡 Server running on http://localhost:{port}")
     print("📝 API Endpoints:")
     print("   - GET  /api/health")
     print("   - GET  /api/metrics")
@@ -694,5 +696,5 @@ if __name__ == '__main__':
     print("   - GET  /api/model-specs?brand=<brand>&model=<model>&fuel_type=<fuel_type>")
     print("   - GET  /api/price-range?brand=<brand>&model=<model>&fuel_type=<fuel_type>")
     print("   - POST /api/predict")
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    app.run(host='0.0.0.0', port=port, debug=False)
 
