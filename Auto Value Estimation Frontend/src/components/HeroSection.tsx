@@ -1,5 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import heroGif from "../../Sports Car GIF by FaZe Clan.gif";
 
 const HeroSection = () => {
   return (
@@ -9,12 +9,11 @@ const HeroSection = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "image-set(url('/Sports%20Car%20GIF%20by%20FaZe%20Clan.gif') 1x, url('/Sports%20Car%20GIF%20by%20FaZe%20Clan.gif') 2x)",
+            backgroundImage: `url(${heroGif})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             zIndex: 0,
             filter: "contrast(1.28) saturate(1.22) brightness(1.06)",
-            imageRendering: "-webkit-optimize-contrast",
             WebkitImageRendering: "-webkit-optimize-contrast",
             MozImageRendering: "crisp-edges",
             imageRendering: "crisp-edges"
