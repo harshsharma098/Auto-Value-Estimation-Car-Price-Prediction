@@ -49,7 +49,10 @@ const AboutUs = () => {
                 </span>
               </div>
               <p className="text-sm text-muted-foreground pt-2">
-                This project was developed as part of academic work in Computer Science and Engineering.
+                Software Programmer at Telgoo5, I actively support backend and system-level development by utilizing my skills in Artificial Intelligence, Prompt Engineering, and advanced programming languages like C++ and Python. My contributions focus on delivering efficient and scalable technical solutions.
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Pursuing a Bachelor of Technology in Computer Science Engineering at Sharda University, I aim to complement my academic knowledge with professional experiences to drive innovation. My dedication lies in leveraging AI and programming to enhance backend systems and create impactful, data-driven technological advancements.
               </p>
             </div>
           </div>
